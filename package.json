@@ -1,13 +1,13 @@
 {
-  "homepage":"http://imketan1610.github.io/",
+  "homepage": "https://imketan1610.github.io",
   "name": "newportfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
-    "predeploy":"npm run build",
-    "deploy": "gh-pages build",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"

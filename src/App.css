@@ -376,6 +376,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .background-image-left {
   top: 28%;
+  left: 0;
   position: absolute;
   bottom: 0;
   width: 60%;
@@ -516,6 +517,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .background-image-left1 {
   /* top: 28%; */
   position: absolute;
+  /* left: 0; */
   bottom: 0;
   width: 60%;
   z-index: -4;
