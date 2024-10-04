@@ -2,9 +2,7 @@ import React, { useEffect, useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import navIcon1 from "../../assets/img/nav-icon1.svg"
-import navIcon2 from "../../assets/img/nav-icon2.svg"
-import navIcon3 from "../../assets/img/nav-icon3.svg"
+import Resume from "../../assets/resume/Resume-Ketan-Makode.pdf";
 
 const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -28,10 +26,7 @@ const NavBar = () => {
     setActiveLink(value);
   };
   return (
-    <Navbar
-      expand="lg"
-      className={`${scrolled ? "scrolled" : ""}`}
-    >
+    <Navbar expand="lg" className={`${scrolled ? "scrolled" : ""}`}>
       <Container>
         <Navbar.Brand href="#home">Ketan</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -84,14 +79,17 @@ const NavBar = () => {
             >
               Contact
             </Nav.Link>
-            <Nav.Link href="#">View Resume</Nav.Link>
           </Nav>
           <span className="navbar-text">
-            <div className="social-icon">
-                <a href="#"><img src={navIcon1} alt="nav-icon1" /></a>
-                <a href="#"><img src={navIcon2} alt="nav-icon2" /></a>
-                <a href="#"><img src={navIcon3} alt="nav-icon3" /></a>
-            </div>
+            <button className="resume-btn">
+              <a
+                href={Resume}
+                target="_blank"
+                download
+              >
+                View Resume
+              </a>
+            </button>
           </span>
         </Navbar.Collapse>
       </Container>
